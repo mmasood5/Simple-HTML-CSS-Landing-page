@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    scroll-behavior: smooth;
+}
+
+.about-section, .contact-section,.services-section
+{
+    background-color: azure;
+}
+html body{
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+/*Navigation bar*/
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: ghostwhite;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: skyblue;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+
+
+
+/*----------------------------Welcome--------------------------------------*/
+.welcome
+{
+    background-position: center center;
+    background-image: url("../tutorial/img/develop.jpg");
+    width: 100%;
+    height: 100vh;
+    margin:auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*--------------------------ABOUT--------------------------------*/
+.about-section
+{
+    position: relative;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 100%;
+    height:400px;
+    
+}
+
+.about-section .main {
+  width: 40%;
+  margin: auto;
+  
+  
+}
+
+.about-section .skill-box
+{
+    
+    margin: auto;
+}
+
+
+
+/*--------------------------PROGRESS BAR--------------------------------*/
+
+
+#progress { 
+    list-style: none;
+    color:black;
+    width: 240px;
+    margin-top: 50px;
+    position: relative;
+    line-height: 2em;
+    
+}
+
+#progress li { 
+  text-align: center;
+  margin-bottom:50px; 
+  height:2px; 
+  border-radius:10px; 
+}
+
+#progress li h4 { 
+    position:relative; 
+    top: -30px;
+}
+
+.progress-bar { 
+    height:18px; 
+    margin:1px 2px;  
+    position:absolute; 
+    border-radius:20px;
+
+
+}
+
+.html {
+    width:80%; 
+    background-color: #23c6b1;
+}
+.css {
+    width:80%;
+    background-color: #f0bb4b;
+
+}
+
+.javascript {
+    width:60%;
+    background-color: #66b3cc;
+
+}
+
+.photoshop {
+    width:70%;
+    background-color:indianred;
+
+}
+
+/*--------------------.services-section------------------*/
+
+.services-section 
+
+    {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        max-width: 100%;
+        
+    }
+    
+
+.services-section .main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+
+}
+
+.row {
+  margin: auto;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  
+  padding: 10px;
+}
+
+/*-----------------------------CONTACT SECTION-------------------------------*/
+
+
+.contact-section 
+
+    {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        max-width: 100%;
+        
+    }
+    
+
+.contact-section .main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.contact-section h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+
+.form-control
+{
+	width: 350px;
+	background: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid gray;
+	color:black;
+	font-size: 18px;
+	margin-bottom: 16px;
+    width: 50%;
+    
+    
+
+}
+
+input
+{
+	height: 45px;
+}
+form .submit
+{
+	background: #dd5e0a;
+	border-color: transparent;
+	color: #fff;
+	font-size: 20px;
+	height: 50px;
+	margin-top: 20px;
+	width: 50%;
+}
+
+form .submit:hover
+{
+	background-color: crimson;
+	cursor: pointer;
+}
+
+
+/*-----------------------------FOOTER-----------------------------------*/
+.footer-section
+{
+
+
+	padding-top: 10px;
+	width: 100%;
+	height: auto;
+	color: #9B9B9B;
+	background:#f0bb4b;
+}
+
+.footer-content
+{
+    display: block;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 14px;
+}
+
+/*----------------------------------------MEDIA QUERIES-------------------------------------------------*/
+
+/*navigation bar: with screen sizes less tham 700 pixels, nav-bar turns into a hamburger and upon
+click, nav-bar opens up in to a drop down menu*/
+
+@media (max-width:700px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid skyblue;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+
+ /*makes a two column-layout instead of four columns*/
+@media screen and (max-width: 900px) {
+    
+    .column {
+        width: 50%;
+    }
+
+}
+
+
+/*makes the two columns stack on top of each other instead of next to each other*/
+@media screen and (max-width: 600px) {
+
+    .about-section
+  
+    {
+        display: block;
+        height: auto;
+    }
+
+
+    .main h1
+    {
+        font-size: 32px;
+    }
+
+
+    .skill-box h1
+    {
+        font-size: 32px;
+    }
+
+
+    .about-section .main
+    {
+        width: 100%;
+        
+    }
+    
+    
+    .column
+    {
+        width: 100%;
+    }
+}
